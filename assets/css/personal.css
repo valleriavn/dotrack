@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap");
+
+:root {
+  --header-height: 75px;
+  --footer-height: 60px;
+  --primary: #ff8b5c;
+  --primary-dark: #e67a4d;
+  --secondary: #9ec1a3;
+  --dark: #4a2c24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Averia Serif Libre", serif;
+  background: url("/dotrack/assets/img/personalbg.png") center center / cover
+    no-repeat fixed;
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: var(--primary);
+  border-bottom: 3px solid #ffcc80;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(255, 139, 92, 0.4);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.4s;
+}
+
+.logo-img:hover {
+  transform: rotate(360deg);
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fffbe7;
+  text-shadow: 2px 2px 4px rgba(91, 62, 49, 0.5);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff8e6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.3s;
+  padding: 7px 14px;
+}
+
+.nav-link:hover {
+  color: #ffe093;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+}
+
+.dashboard-container {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 24px;
+  padding: 2.5rem 1.5rem;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-button:hover {
+  background: rgba(201, 237, 198, 0.85);
+  transform: translateY(-8px);
+  color: white;
+}
+
+.card-button i {
+  color: #ffcc80;
+}
+
+.card-button h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.card-button p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.sidebar {
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  width: 70px;
+  border-radius: 40px;
+  overflow: hidden;
+  transition: width 0.3s ease;
+  z-index: 100;
+}
+
+.sidebar:hover {
+  width: 220px;
+}
+
+.tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.3s;
+}
+
+.tab-btn i {
+  font-size: 1.5rem;
+  min-width: 30px;
+}
+
+.tab-btn .label {
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 1rem;
+}
+
+.sidebar:hover .tab-btn .label {
+  opacity: 1;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: var(--primary);
+}
+
+.content {
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  margin-left: 90px;
+}
+
+.content h2 {
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.habit-card {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 1.5rem;
+  color: white;
+  height: 100%;
+}
+
+.habit-day-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--primary);
+}
+
+.habit-item {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.site-footer {
+  background-color: var(--primary);
+  border-top: 3px solid #ffcc80;
+  color: #fff9e5;
+  height: var(--footer-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-center {
+  justify-content: center;
+}
+
+.footer-right {
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #ffe36b;
+}
+
+.footer-left span {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .sidebar:hover {
+    width: 100%;
+  }
+
+  .tab-btn {
+    justify-content: center;
+    padding: 12px 20px;
+  }
+
+  .tab-btn .label {
+    opacity: 1;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .dashboard-container {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .main-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .site-title {
+    font-size: 1.4rem;
+  }
+
+  .card-button {
+    padding: 1.8rem 1rem;
+  }
+
+  .card-button h2 {
+    font-size: 1.4rem;
+  }
+
+  .card-button i {
+    font-size: 2.5rem;
+  }
+
+  .content {
+    padding: 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 0 1rem;
+  }
+
+  .footer-right {
+    gap: 0.8rem;
+  }
+
+  .footer-section p,
+  .footer-section a,
+  .footer-left span {
+    font-size: 0.8rem;
+  }
+
+  .table-responsive .btn-sm {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-button {
+    padding: 1.5rem 1rem;
+  }
+
+  .card-button h2 {
+    font-size: 1.2rem;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .habit-card {
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&display=swap');
+
+:root {
+  --primary: #ff8b5c;
+  --secondary: #9ec1a3;
+  --light: #fffdf9;
+  --dark: #4a2c24;
+  --text: #333;
+  --card-radius: 22px;
+  --header-height: 75px;
+  --footer-height: 60px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Averia Serif Libre', serif;
+}
+
+body, html {
+  height: 100%;
+  background: url('/dotrack/assets/img/createjoin.png') center center / cover no-repeat;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: var(--primary);
+  border-bottom: 3px solid #ffcc80;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  height: var(--header-height);
+  z-index: 10;
+  box-shadow: 0 4px 10px rgba(255, 139, 92, 0.4);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.4s;
+}
+
+.logo-img:hover {
+  transform: rotate(360deg);
+}
+
+.site-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #fffbe7;
+  text-shadow: 2px 2px 4px rgba(91, 62, 49, 0.5);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.main-nav a {
+  color: #fff8e6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.3s;
+  padding: 7px 14px;
+}
+
+.main-nav a:hover {
+  color: #ffe093;
+  transform: translateY(-2px); 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+}
+
+/* FOOTER */
+.site-footer {
+  background-color: var(--primary);
+  border-top: 3px solid #ffcc80;
+  color: #fff9e5;
+  height: var(--footer-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 1.1rem;
+  box-shadow: 0 -4px 10px rgba(255, 139, 92, 0.4);
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+.footer-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 12px;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-center {
+  justify-content: center;
+}
+
+.footer-right {
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 1rem;
+}
+
+.footer-right a:hover {
+  color: #ffe36b;
+  transform: translateY(-2px);
+}
+
+/* MAIN CONTENT AREA */
+.auth-center {
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  max-width: 800px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* ACTION BUTTON - Transparent Frosted Style */
+.action-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 5rem;
+  flex: 1;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.3rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  min-width: 300px;
+}
+
+.action-button:hover {
+  background: rgba(201, 237, 198, 0.85); 
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.action-button i {
+  font-size: 3.5rem;
+  color: var(--primary);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* MODALS */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: var(--light);
+  border-radius: var(--card-radius);
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.1);
+  position: relative;
+  animation: modalAppear 0.4s ease-out;
+}
+
+@keyframes modalAppear {
+  from { opacity: 0; transform: translateY(-50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.close-btn:hover {
+  color: var(--primary);
+}
+
+.modal h2 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1.8rem;
+  font-size: 2.2rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  border: 2px solid #e6e6e6;
+  font-size: 1.1rem;
+  transition: border 0.3s;
+}
+
+.form-group input:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+.code-display {
+  background: #f9f9f9;
+  padding: 0.8rem 1.2rem;
+  border-radius: 12px;
+  border: 2px dashed #ccc;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary);
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.code-display:hover {
+  background: #f0f0f0;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: var(--primary);
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 1rem;
+  box-shadow: 0 4px 15px rgba(255, 139, 92, 0.4);
+}
+
+.submit-btn:hover {
+  background: #e06e3e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .action-button {
+    padding: 2.5rem;
+    font-size: 1.2rem;
+  }
+
+  .action-button i {
+    font-size: 3rem;
+  }
+
+  .modal-content {
+    padding: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    width: 95%;
+    gap: 1.2rem;
+  }
+
+  .action-button {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    min-width: unset;
+    width: 100%;
+  }
+
+  .action-button i {
+    font-size: 2.5rem;
+  }
+
+  .modal h2 {
+    font-size: 1.8rem;
+  }
+
+  .submit-btn {
+    font-size: 1.1rem;
+  }
+}

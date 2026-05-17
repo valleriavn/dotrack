@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap");
+
+:root {
+  --header-height: 75px;
+  --footer-height: 60px;
+  --primary: #ff8b5c;
+  --primary-dark: #e67a4d;
+  --secondary: #9ec1a3;
+  --secondary-dark: #84a989;
+  --light: #fffdf9;
+  --dark: #4a2c24;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Averia Serif Libre", serif;
+  background: url("/dotrack/assets/img/modepbg.png") center center / cover
+    no-repeat fixed;
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: var(--primary);
+  border-bottom: 3px solid #ffcc80;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(255, 139, 92, 0.4);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: contain;
+  transition: transform 0.4s;
+}
+
+.logo-img:hover {
+  transform: rotate(360deg);
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.nav-link {
+  color: #fff8e6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: all 0.3s;
+  padding: 7px 14px;
+}
+
+.nav-link:hover {
+  color: #ffe093;
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+}
+
+.mode-card {
+  background: rgba(255, 253, 249, 0.95);
+  border-radius: 22px;
+  border: 5px solid transparent;
+  background-clip: padding-box;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(2px);
+}
+
+.mode-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.mode-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+  min-width: 200px;
+}
+
+.mode-btn i {
+  font-size: 1.8rem;
+}
+
+.personal-btn {
+  background: var(--secondary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(158, 193, 163, 0.4);
+}
+
+.personal-btn:hover {
+  background: var(--secondary-dark);
+  transform: translateY(-3px);
+  color: white;
+  box-shadow: 0 8px 25px rgba(158, 193, 163, 0.5);
+}
+
+.collaborate-btn {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 15px rgba(255, 139, 92, 0.4);
+}
+
+.collaborate-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  color: white;
+  box-shadow: 0 8px 25px rgba(255, 139, 92, 0.5);
+}
+
+.site-footer {
+  background-color: var(--primary);
+  border-top: 3px solid #ffcc80;
+  color: #fff9e5;
+  height: var(--footer-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 0 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  justify-content: flex-start;
+}
+
+.footer-center {
+  justify-content: center;
+}
+
+.footer-right {
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+
+.site-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.site-footer a:hover {
+  color: #ffe36b;
+}
+
+.footer-left span {
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .mode-title {
+    font-size: 2rem;
+  }
+
+  .mode-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    min-width: 160px;
+  }
+
+  .mode-btn i {
+    font-size: 1.5rem;
+  }
+
+  .site-footer {
+    padding: 0 1rem;
+  }
+
+  .footer-right {
+    gap: 0.8rem;
+  }
+
+  .footer-section p,
+  .footer-section a,
+  .footer-left span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .mode-title {
+    font-size: 1.6rem;
+  }
+
+  .mode-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    min-width: 140px;
+  }
+
+  .mode-btn i {
+    font-size: 1.3rem;
+  }
+}
