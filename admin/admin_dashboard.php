@@ -535,6 +535,8 @@ if ($selected_user_id > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity Monitor | DoTrack Admin</title>
     <link rel="stylesheet" href="../assets/css/admin_dashboard.css">
+    <link rel="icon" type="image/png" href="/dotrack/assets/img/tablogo.png">
+    <link rel="shortcut icon" type="image/png" href="/dotrack/assets/img/tablogo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">

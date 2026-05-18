@@ -16,6 +16,8 @@ if (!isset($_SESSION['logged_in'])) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/dotrack/assets/img/tablogo.png">
+    <link rel="shortcut icon" type="image/png" href="/dotrack/assets/img/tablogo.png">
     <link rel="stylesheet" href="/dotrack/assets/css/mode.css">
 </head>
 

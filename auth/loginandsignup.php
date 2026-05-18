@@ -22,9 +22,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>DoTrack - Login & Sign Up</title>
+  <link rel="icon" type="image/png" href="/dotrack/assets/img/tablogo.png">
+  <link rel="shortcut icon" type="image/png" href="/dotrack/assets/img/tablogo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300;400;700&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="../assets/css/loginsignup.css" />
 </head>
 
