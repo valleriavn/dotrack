@@ -846,7 +846,7 @@ $subtask_count = 5;
             <span>DoTrack</span>
         </div>
         <div class="footer-section footer-center">
-            <p>&copy; 2025 DoTrack. All rights reserved.</p>
+            <p>&copy; 2026 DoTrack. All rights reserved.</p>
         </div>
         <div class="footer-section footer-right">
             <a href="/dotrack/ourteam.php">Our Team</a>

@@ -313,7 +313,7 @@ if ($stmt === false) {
       <a>DoTrack</a>
     </div>
     <div class="footer-section footer-center">
-      <p>© 2025 DoTrack. All rights reserved.</p>
+      <p>© 2026 DoTrack. All rights reserved.</p>
     </div>
     <div class="footer-section footer-right">
       <a href="/dotrack/ourteam.php">Our Team</a>

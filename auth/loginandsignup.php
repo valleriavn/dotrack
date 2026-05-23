@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <div class="modal-body">
           <div class="terms-container" id="termsText">
             <h5 class="mb-3">Terms and Conditions for DoTrack</h5>
-            <p><strong>Last Updated: June 2025</strong></p>
+            <p><strong>Last Updated: April 2026</strong></p>
 
             <h6 class="mt-3">1. Acceptance of Terms</h6>
             <p>By accessing or using DoTrack ("the Service"), you agree to be bound by these Terms and Conditions ("Terms"). If you do not agree to all of these Terms, do not use the Service.</p>
@@ -183,7 +183,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <span>DoTrack</span>
     </div>
     <div class="footer-section footer-center">
-      <p>&copy; 2025 DoTrack. All rights reserved.</p>
+      <p>&copy; 2026 DoTrack. All rights reserved.</p>
     </div>
     <div class="footer-section footer-right">
       <a href="../ourteam.php">Our Team</a>

@@ -58,43 +58,93 @@ session_start();
           <p class="team-subtitle">The passionate minds driving innovation and success</p>
         </div>
         <div class="row g-4 justify-content-center">
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="team-card">
-              <img src="/dotrack/assets/img/nei.png" alt="Neilyn Bobadilla">
               <h3 class="name">Neilyn Bobadilla</h3>
               <div class="social-icons">
-                <a href="https://www.instagram.com/neiloveyoun/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Enrbbrbfidhr" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 <a href="https://www.facebook.com/nlynbbdll" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="team-card">
-              <img src="/dotrack/assets/img/sarah.png" alt="Sarah Macalilong">
-              <h3 class="name">Sarah Macalilong</h3>
+              <h3 class="name">Shella May Cuenca</h3>
               <div class="social-icons">
-                <a href="https://www.instagram.com/cassandramacalilong/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/she1028" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="team-card">
+              <h3 class="name">Shane Diola</h3>
+              <div class="social-icons">
+                <a href="https://github.com/Shane-Diola" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="team-card">
+              <h3 class="name">Sarah Cassandra Macalilong</h3>
+              <div class="social-icons">
+                <a href="https://github.com/SarahCassandra" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 <a href="https://www.facebook.com/ja.ren.104" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="team-card">
-              <img src="/dotrack/assets/img/rhen.png" alt="Rhenalyn Mecha">
+              <h3 class="name">Kristine Ann Maglinao</h3>
+              <div class="social-icons">
+                <a href="https://github.com/ksstn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="team-card">
+              <h3 class="name">Chrislhin Malabanan</h3>
+              <div class="social-icons">
+                <a href="https://github.com/ChrisMalabanan" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="team-card">
               <h3 class="name">Rhenalyn Mecha</h3>
               <div class="social-icons">
-                <a href="https://www.instagram.com/rhennnnnalyyyn/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/itsrhena" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 <a href="https://www.facebook.com/crwnlss" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-lg-3">
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
             <div class="team-card">
-              <img src="/dotrack/assets/img/kim.png" alt="Kim Verlie Napolitano">
               <h3 class="name">Kim Verlie Napolitano</h3>
               <div class="social-icons">
-                <a href="https://www.instagram.com/valleriavn/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/valleriavn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                 <a href="https://www.facebook.com/valleriavn/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="team-card">
+              <h3 class="name">John Gabriel Soldevilla</h3>
+              <div class="social-icons">
+                <a href="https://github.com/yhnlhee" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+            <div class="team-card">
+              <h3 class="name">Maria Stepheny Velasco</h3>
+              <div class="social-icons">
+                <a href="https://github.com/stephenyvelasco" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
               </div>
             </div>
           </div>
@@ -105,7 +155,7 @@ session_start();
 
   <footer class="site-footer">
     <div class="footer-container">
-      <p>&copy; 2025 DoTrack. All rights reserved. | <a href="mailto:dotrack@gmail.com">dotrack@gmail.com</a></p>
+      <p>&copy; 2026 DoTrack. All rights reserved. | <a href="mailto:dotrack@gmail.com">dotrack@gmail.com</a></p>
     </div>
   </footer>
 
